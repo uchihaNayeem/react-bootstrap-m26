@@ -1,14 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Button, Card } from 'react-bootstrap'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>hello</h1>
-      </header>
+    <div>
+      <h2>React bootstrap</h2>
+      <Button variant="primary">Primary</Button>
+      {/* cards */}
+      <Card>
+        <Card.Header as="h5">Featured</Card.Header>
+        <Card.Body>
+          <Card.Title>Special title treatment</Card.Title>
+          <Card.Text>
+            With supporting text below as a natural lead-in to additional content.
+    </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
+
     </div>
   );
 }
